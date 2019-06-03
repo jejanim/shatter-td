@@ -1,0 +1,594 @@
+﻿STRING 1
+{
+|cffFE890DShatter TD (|cff7DBEF1v 2.2|cffFE890D)
+}
+
+STRING 2
+{
+8
+}
+
+STRING 3
+{
+|cffFE890DTower defense
+|rMax Players: 8
+Min Players: 1
+}
+
+STRING 4
+{
+|cff7DBEF1Jejanim
+}
+
+STRING 5
+{
+Spieler 1
+}
+
+STRING 7
+{
+Shatter TD
+}
+
+STRING 8
+{
+|cffFE890DLatest changes (2.2 Jan 2019):|n|cffFFCC00----------------------------------|n|cff1BE6B8-|cffFFCC00 Add randomly spawned trees|n|cff1BE6B8-|cffFFCC00 Trees can be harvested to craft campfires|n|cff1BE6B8-|cffFFCC00 Fixed a lot of tooltips|n|cff1BE6B8-|cffFFCC00 Fixed Phoenix respawns killing your stuff
+}
+
+STRING 9
+{
+Spieler 2
+}
+
+STRING 10
+{
+Spieler 3
+}
+
+STRING 11
+{
+Spieler 4
+}
+
+STRING 14
+{
+The cleansing command
+}
+
+STRING 15
+{
+Annihilation force
+}
+
+STRING 51
+// Units: h01B (Envenom), Name (Name)
+{
+Envenom
+}
+
+STRING 54
+// Buffs/Effects: B000 (Stun), EditorName (Name (Editor Only))
+{
+Stun
+}
+
+STRING 102
+// Units: u000 (Shocker summoner), Name (Name)
+{
+Shocker summoner
+}
+
+STRING 103
+// Units: u001 (Magix summoner), Name (Name)
+{
+Magix summoner
+}
+
+STRING 104
+// Units: u002 (Arms summoner), Name (Name)
+{
+Arms summoner
+}
+
+STRING 105
+// Units: u003 (Chosen summoner), Name (Name)
+{
+Chosen summoner
+}
+
+STRING 142
+// Buffs/Effects: B003 (Magic weakness), EditorName (Name (Editor Only))
+{
+Magic weakness
+}
+
+STRING 211
+// Units: h006 (), Tip (Tooltip - Basic)
+{
+Barricade
+}
+
+STRING 213
+// Units: h012 (), Ubertip (Tooltip - Extended)
+{
+A cheap wall that can be used to create a maze.
+}
+
+STRING 265
+// Abilities: A001 (envenom), Name (Name)
+{
+envenom
+}
+
+STRING 290
+// Units: h006 (), Ubertip (Tooltip - Extended)
+{
+A cheap wall that can be used to create a maze.
+}
+
+STRING 291
+// Units: h006 (), EditorSuffix (Name - Editor Suffix)
+{
+(invisible)
+}
+
+STRING 384
+// Units: u004 (Commander), Name (Name)
+{
+Commander
+}
+
+STRING 387
+// Units: h00O (02 Apprentice), Name (Name)
+{
+02 Apprentice
+}
+
+STRING 388
+// Units: h04W (01 Worker), Name (Name)
+{
+01 Worker
+}
+
+STRING 390
+// Units: h00R (03 Oracle), Name (Name)
+{
+03 Oracle
+}
+
+STRING 397
+// Units: h00S (04 Knight), Name (Name)
+{
+04 Knight
+}
+
+STRING 399
+// Units: h02H (06 Deathguard), Name (Name)
+{
+06 Deathguard
+}
+
+STRING 405
+// Units: h04N (05 Bone Giant), Name (Name)
+{
+05 Bone Giant
+}
+
+STRING 413
+// Units: h01O (07 Shadow sentry), Name (Name)
+{
+07 Shadow sentry
+}
+
+STRING 414
+// Units: h01P (10 Eternal essence), Name (Name)
+{
+10 Eternal essence
+}
+
+STRING 462
+// Units: h01C (Envenom), Name (Name)
+{
+Envenom
+}
+
+STRING 466
+// Units: h01D (Envenom), Name (Name)
+{
+Envenom
+}
+
+STRING 512
+// Units: u00B (Wound), Name (Name)
+{
+Wound
+}
+
+STRING 513
+// Units: u00C (Wound), Name (Name)
+{
+Wound
+}
+
+STRING 520
+// Units: h02N (creep_mana shield), Ubertip (Tooltip - Extended)
+{
+A cheap wall that can be used to create a maze.
+}
+
+STRING 524
+// Abilities: A038 (creep_frost armor), EditorSuffix (Editor Suffix)
+{
+Barricade fire
+}
+
+STRING 530
+// Units: H05R (), Propernames (Proper Names)
+{
+ (Info)
+}
+
+STRING 565
+// Units: h02I (11 Felhound), Name (Name)
+{
+11 Felhound
+}
+
+STRING 566
+// Units: h02F (13 Felguard), Name (Name)
+{
+13 Felguard
+}
+
+STRING 567
+// Units: h00W (15 Doomguard), Name (Name)
+{
+15 Doomguard
+}
+
+STRING 572
+// Units: h026 (12 Succubus), Name (Name)
+{
+12 Succubus
+}
+
+STRING 589
+// Buffs/Effects: B00A (creep_mana shield), EditorName (Name (Editor Only))
+{
+creep_mana shield
+}
+
+STRING 590
+// Upgrades: R00R (Skeletal Mastery), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 591
+// Buffs/Effects: B01V (), Buffubertip (Tooltip - Extended)
+{
+Frost armor
+}
+
+STRING 594
+// Units: u00H (Mana shield), Name (Name)
+{
+Mana shield
+}
+
+STRING 595
+// Abilities: A01M (), Tip (Tooltip - Normal)
+{
+Mana shield
+}
+
+STRING 597
+// Abilities: A00W (creep_avoid), Name (Name)
+{
+creep_avoid
+}
+
+STRING 598
+// Units: h00E (), EditorSuffix (Name - Editor Suffix)
+{
+(shocker)
+}
+
+STRING 601
+// Units: h02O (creep_mana shield), Ubertip (Tooltip - Extended)
+{
+A cheap wall that can be used to create a maze.
+}
+
+STRING 605
+// Units: h02P (creep_mana shield), Ubertip (Tooltip - Extended)
+{
+A cheap wall that can be used to create a maze.
+}
+
+STRING 606
+// Units: h000 (), EditorSuffix (Name - Editor Suffix)
+{
+(magix)
+}
+
+STRING 742
+// Abilities: A00X (creep_rejuvenation), Name (Name)
+{
+creep_rejuvenation
+}
+
+STRING 744
+// Buffs/Effects: B00F (Rejuvenation), EditorName (Name (Editor Only))
+{
+Rejuvenation
+}
+
+STRING 747
+// Buffs/Effects: B00G (Anti-magic-bubble), EditorName (Name (Editor Only))
+{
+Anti-magic-bubble
+}
+
+STRING 749
+// Buffs/Effects: B00H (Anti-magic-bubble), EditorName (Name (Editor Only))
+{
+Anti-magic-bubble
+}
+
+STRING 782
+// Buffs/Effects: B00L (Razorblade), EditorName (Name (Editor Only))
+{
+Razorblade
+}
+
+STRING 795
+// Buffs/Effects: B00M (Razorblade), EditorName (Name (Editor Only))
+{
+Razorblade
+}
+
+STRING 853
+// Buffs/Effects: B005 (Crypt fever), EditorName (Name (Editor Only))
+{
+Crypt fever
+}
+
+STRING 854
+// Buffs/Effects: B006 (Crypt fever), EditorName (Name (Editor Only))
+{
+Crypt fever
+}
+
+STRING 858
+// Units: h002 (), EditorSuffix (Name - Editor Suffix)
+{
+(magix)
+}
+
+STRING 860
+// Units: h003 (), EditorSuffix (Name - Editor Suffix)
+{
+(magix)
+}
+
+STRING 862
+// Units: h004 (), EditorSuffix (Name - Editor Suffix)
+{
+(magix)
+}
+
+STRING 864
+// Units: h005 (), EditorSuffix (Name - Editor Suffix)
+{
+(magix)
+}
+
+STRING 867
+// Units: h007 (), EditorSuffix (Name - Editor Suffix)
+{
+(magix)
+}
+
+STRING 870
+// Units: h008 (), EditorSuffix (Name - Editor Suffix)
+{
+(magix)
+}
+
+STRING 873
+// Units: h009 (), EditorSuffix (Name - Editor Suffix)
+{
+(magix)
+}
+
+STRING 876
+// Units: h00A (), EditorSuffix (Name - Editor Suffix)
+{
+(magix)
+}
+
+STRING 883
+// Units: h015 (), EditorSuffix (Name - Editor Suffix)
+{
+(shocker)
+}
+
+STRING 884
+// Units: h014 (), EditorSuffix (Name - Editor Suffix)
+{
+(magix)
+}
+
+STRING 887
+// Units: h016 (), EditorSuffix (Name - Editor Suffix)
+{
+(shocker)
+}
+
+STRING 889
+// Units: h017 (), EditorSuffix (Name - Editor Suffix)
+{
+(shocker)
+}
+
+STRING 892
+// Units: h018 (), EditorSuffix (Name - Editor Suffix)
+{
+(shocker)
+}
+
+STRING 894
+// Units: h019 (), EditorSuffix (Name - Editor Suffix)
+{
+(shocker)
+}
+
+STRING 896
+// Units: h00B (), EditorSuffix (Name - Editor Suffix)
+{
+(shocker)
+}
+
+STRING 898
+// Units: h034 (), EditorSuffix (Name - Editor Suffix)
+{
+(magix)
+}
+
+STRING 928
+// Units: h02E (), EditorSuffix (Name - Editor Suffix)
+{
+(magix)
+}
+
+STRING 968
+// Abilities: A003 (creep_frost armor), Tip (Tooltip - Normal)
+{
+Icy chill
+}
+
+STRING 969
+// Abilities: A003 (creep_frost armor), Ubertip (Tooltip - Normal - Extended)
+{
+Decreases moving speed by 25%.
+}
+
+STRING 972
+// Buffs/Effects: B002 (Liquid fire), EditorName (Name (Editor Only))
+{
+Liquid fire
+}
+
+STRING 973
+// Buffs/Effects: B00J (Liquid fire), EditorName (Name (Editor Only))
+{
+Liquid fire
+}
+
+STRING 976
+// Buffs/Effects: B00I (Chilled), EditorName (Name (Editor Only))
+{
+Chilled
+}
+
+STRING 2363
+{
+Spieler 5
+}
+
+STRING 2364
+{
+Spieler 6
+}
+
+STRING 2365
+{
+Spieler 7
+}
+
+STRING 2366
+{
+Spieler 8
+}
+
+STRING 2367
+{
+Gimps
+}
+
+STRING 2368
+{
+Allies
+}
+
+STRING 3891
+{
+You were kicked due to inactivity.
+}
+
+STRING 3892
+{
+Normal
+}
+
+STRING 3893
+{
+Advanced
+}
+
+STRING 3894
+{
+Select game mode:
+}
+
+STRING 3895
+{
+----------------------
+}
+
+STRING 3898
+{
+Your sanctum was destroyed.
+}
+
+STRING 4631
+{
+Jejanim presents
+}
+
+STRING 4861
+{
+Player 1 is not present. We're running 'Normal Mode'.
+}
+
+STRING 4863
+{
+Creeps will now launch more powerful spells at your queen.
+}
+
+STRING 5477
+{
+Race selection
+}
+
+STRING 5575
+{
+Your sanctum lost its mana shield!
+}
+
+STRING 5588
+{
+Race selection timer expired, get ready.
+}
+
+STRING 5739
+{
+Growing trees...
+}
+
+STRING 5897
+{
+Sanctum
+}
+
