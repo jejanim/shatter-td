@@ -103,7 +103,7 @@ Magic weakness
 }
 
 STRING 211
-// Units: h006 (), Tip (Tooltip - Basic)
+// Units: h006 (0 Blocker), Tip (Tooltip - Basic)
 {
 Barricade
 }
@@ -114,76 +114,16 @@ STRING 213
 A cheap wall that can be used to create a maze.
 }
 
-STRING 265
-// Abilities: A001 (envenom), Name (Name)
-{
-envenom
-}
-
 STRING 290
-// Units: h006 (), Ubertip (Tooltip - Extended)
+// Units: h006 (0 Blocker), Ubertip (Tooltip - Extended)
 {
 A cheap wall that can be used to create a maze.
 }
 
 STRING 291
-// Units: h006 (), EditorSuffix (Name - Editor Suffix)
+// Units: h006 (0 Blocker), EditorSuffix (Name - Editor Suffix)
 {
 (invisible)
-}
-
-STRING 384
-// Units: u004 (Commander), Name (Name)
-{
-Commander
-}
-
-STRING 387
-// Units: h00O (02 Apprentice), Name (Name)
-{
-02 Apprentice
-}
-
-STRING 388
-// Units: h04W (01 Worker), Name (Name)
-{
-01 Worker
-}
-
-STRING 390
-// Units: h00R (03 Oracle), Name (Name)
-{
-03 Oracle
-}
-
-STRING 397
-// Units: h00S (04 Knight), Name (Name)
-{
-04 Knight
-}
-
-STRING 399
-// Units: h02H (06 Deathguard), Name (Name)
-{
-06 Deathguard
-}
-
-STRING 405
-// Units: h04N (05 Bone Giant), Name (Name)
-{
-05 Bone Giant
-}
-
-STRING 413
-// Units: h01O (07 Shadow sentry), Name (Name)
-{
-07 Shadow sentry
-}
-
-STRING 414
-// Units: h01P (10 Eternal essence), Name (Name)
-{
-10 Eternal essence
 }
 
 STRING 462
@@ -198,18 +138,6 @@ STRING 466
 Envenom
 }
 
-STRING 512
-// Units: u00B (Wound), Name (Name)
-{
-Wound
-}
-
-STRING 513
-// Units: u00C (Wound), Name (Name)
-{
-Wound
-}
-
 STRING 520
 // Units: h02N (creep_mana shield), Ubertip (Tooltip - Extended)
 {
@@ -217,7 +145,7 @@ A cheap wall that can be used to create a maze.
 }
 
 STRING 524
-// Abilities: A038 (creep_frost armor), EditorSuffix (Editor Suffix)
+// Abilities: A038 (Item Attack Corruption Bonus), EditorSuffix (Editor Suffix)
 {
 Barricade fire
 }
@@ -228,62 +156,20 @@ STRING 530
  (Info)
 }
 
-STRING 565
-// Units: h02I (11 Felhound), Name (Name)
-{
-11 Felhound
-}
-
-STRING 566
-// Units: h02F (13 Felguard), Name (Name)
-{
-13 Felguard
-}
-
-STRING 567
-// Units: h00W (15 Doomguard), Name (Name)
-{
-15 Doomguard
-}
-
-STRING 572
-// Units: h026 (12 Succubus), Name (Name)
-{
-12 Succubus
-}
-
 STRING 589
-// Buffs/Effects: B00A (creep_mana shield), EditorName (Name (Editor Only))
+// Units: h01E (creep_mana shield), Name (Name)
 {
 creep_mana shield
 }
 
 STRING 590
-// Upgrades: R00R (Skeletal Mastery), Name (Name)
+// Abilities: A002 (creep_avoid), EditorSuffix (Editor Suffix)
 {
 creep_frost armor
 }
 
-STRING 591
-// Buffs/Effects: B01V (), Buffubertip (Tooltip - Extended)
-{
-Frost armor
-}
-
-STRING 594
-// Units: u00H (Mana shield), Name (Name)
-{
-Mana shield
-}
-
-STRING 595
-// Abilities: A01M (), Tip (Tooltip - Normal)
-{
-Mana shield
-}
-
 STRING 597
-// Abilities: A00W (creep_avoid), Name (Name)
+// Abilities: A002 (creep_avoid), Name (Name)
 {
 creep_avoid
 }
@@ -310,12 +196,6 @@ STRING 606
 // Units: h000 (), EditorSuffix (Name - Editor Suffix)
 {
 (magix)
-}
-
-STRING 742
-// Abilities: A00X (creep_rejuvenation), Name (Name)
-{
-creep_rejuvenation
 }
 
 STRING 744
@@ -463,13 +343,13 @@ STRING 928
 }
 
 STRING 968
-// Abilities: A003 (creep_frost armor), Tip (Tooltip - Normal)
+// Abilities: A003 (Item Attack Frost Bonus), Tip (Tooltip - Normal)
 {
 Icy chill
 }
 
 STRING 969
-// Abilities: A003 (creep_frost armor), Ubertip (Tooltip - Normal - Extended)
+// Abilities: A003 (Item Attack Frost Bonus), Ubertip (Tooltip - Normal - Extended)
 {
 Decreases moving speed by 25%.
 }
@@ -590,5 +470,1235 @@ Growing trees...
 STRING 5897
 {
 Sanctum
+}
+
+STRING 5898
+// Units: h02N (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5900
+// Units: h02O (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5901
+// Units: h02P (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5902
+// Units: h02R (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5903
+// Units: h02T (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5904
+// Units: h05N (), Tip (Tooltip - Basic)
+{
+creep_mana shield
+}
+
+STRING 5905
+// Units: h04X (), Tip (Tooltip - Basic)
+{
+creep_mana shield
+}
+
+STRING 5906
+// Units: h067 (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5907
+// Units: h06A (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5908
+// Units: h06B (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5909
+// Units: h06C (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5910
+// Units: h06H (), Ubertip (Tooltip - Extended)
+{
+creep_mana shield
+}
+
+STRING 5911
+// Units: h06I (), Ubertip (Tooltip - Extended)
+{
+creep_mana shield
+}
+
+STRING 5912
+// Units: h06J (Phoenix Egg), EditorSuffix (Name - Editor Suffix)
+{
+creep_mana shield
+}
+
+STRING 5913
+// Units: h06O (), Ubertip (Tooltip - Extended)
+{
+creep_mana shield
+}
+
+STRING 5914
+// Units: h06P (), Ubertip (Tooltip - Extended)
+{
+creep_mana shield
+}
+
+STRING 5915
+// Units: h06Q (), Ubertip (Tooltip - Extended)
+{
+creep_mana shield
+}
+
+STRING 5916
+// Units: h06R (), Ubertip (Tooltip - Extended)
+{
+creep_mana shield
+}
+
+STRING 5917
+// Units: u00H (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5918
+// Units: h072 (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5919
+// Units: h073 (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5920
+// Units: h074 (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5921
+// Units: h075 (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5922
+// Units: h076 (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5923
+// Units: h077 (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5924
+// Units: h079 (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5925
+// Abilities: A001 (creep_mana shield), EditorSuffix (Editor Suffix)
+{
+creep_mana shield
+}
+
+STRING 5926
+// Abilities: A001 (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5927
+// Abilities: A005 (Incinerate), EditorSuffix (Editor Suffix)
+{
+creep_mana shield
+}
+
+STRING 5928
+// Abilities: A00A (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5929
+// Abilities: A00C (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5930
+// Abilities: A00C (creep_mana shield), EditorSuffix (Editor Suffix)
+{
+creep_mana shield
+}
+
+STRING 5931
+// Abilities: A00H (Feedback), EditorSuffix (Editor Suffix)
+{
+creep_mana shield
+}
+
+STRING 5932
+// Abilities: A00M (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5933
+// Abilities: A00M (creep_mana shield), EditorSuffix (Editor Suffix)
+{
+creep_mana shield
+}
+
+STRING 5934
+// Abilities: A00N (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5935
+// Abilities: A00O (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5936
+// Abilities: A00O (creep_mana shield), EditorSuffix (Editor Suffix)
+{
+creep_mana shield
+}
+
+STRING 5937
+// Abilities: A012 (Moon Glaive), Tip (Tooltip - Normal)
+{
+creep_mana shield
+}
+
+STRING 5938
+// Abilities: A017 (Evasion), EditorSuffix (Editor Suffix)
+{
+creep_mana shield
+}
+
+STRING 5939
+// Abilities: A01A (Item Attack Corruption Bonus), EditorSuffix (Editor Suffix)
+{
+creep_mana shield
+}
+
+STRING 5940
+// Abilities: A01G (Shadow Strike), Ubertip (Tooltip - Normal - Extended)
+{
+creep_mana shield
+}
+
+STRING 5941
+// Abilities: A01H (Evasion), EditorSuffix (Editor Suffix)
+{
+creep_mana shield
+}
+
+STRING 5942
+// Abilities: A01J (Item Attack Corruption Bonus), EditorSuffix (Editor Suffix)
+{
+creep_mana shield
+}
+
+STRING 5943
+// Abilities: A01K (Evasion), EditorSuffix (Editor Suffix)
+{
+creep_mana shield
+}
+
+STRING 5944
+// Abilities: A01M (Mana Shield), Tip (Tooltip - Normal)
+{
+creep_mana shield
+}
+
+STRING 5945
+// Abilities: A01Z (Critical Strike), Ubertip (Tooltip - Normal - Extended)
+{
+creep_mana shield
+}
+
+STRING 5946
+// Abilities: A00P (creep_mana shield), EditorSuffix (Editor Suffix)
+{
+creep_mana shield
+}
+
+STRING 5947
+// Abilities: A00P (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5948
+// Abilities: A00Q (creep_mana shield), Name (Name)
+{
+creep_mana shield
+}
+
+STRING 5949
+// Abilities: A002 (creep_avoid), Tip (Tooltip - Normal)
+{
+creep_mana shield
+}
+
+STRING 5950
+// Abilities: A02M (creep_frost armor), Tip (Tooltip - Normal)
+{
+creep_mana shield
+}
+
+STRING 5951
+// Abilities: A02M (creep_frost armor), Tip (Tooltip - Normal)
+{
+creep_mana shield
+}
+
+STRING 5952
+// Abilities: A01S (Evasion), EditorSuffix (Editor Suffix)
+{
+creep_mana shield
+}
+
+STRING 5953
+// Abilities: A032 (Locust Swarm), Tip (Tooltip - Normal)
+{
+creep_mana shield
+}
+
+STRING 5954
+// Abilities: A032 (Locust Swarm), Ubertip (Tooltip - Normal - Extended)
+{
+creep_mana shield
+}
+
+STRING 5955
+// Abilities: A033 (Locust Swarm), Tip (Tooltip - Normal)
+{
+creep_mana shield
+}
+
+STRING 5956
+// Abilities: A033 (Locust Swarm), Ubertip (Tooltip - Normal - Extended)
+{
+creep_mana shield
+}
+
+STRING 5957
+// Abilities: A034 (Evasion), Tip (Tooltip - Normal)
+{
+creep_mana shield
+}
+
+STRING 5958
+// Abilities: A034 (Evasion), Ubertip (Tooltip - Normal - Extended)
+{
+creep_mana shield
+}
+
+STRING 5959
+// Abilities: A035 (Evasion), Ubertip (Tooltip - Normal - Extended)
+{
+creep_mana shield
+}
+
+STRING 5960
+// Abilities: A039 (Evasion), Ubertip (Tooltip - Normal - Extended)
+{
+creep_mana shield
+}
+
+STRING 5961
+// Abilities: A03R (Evasion), Tip (Tooltip - Normal)
+{
+creep_mana shield
+}
+
+STRING 5962
+// Abilities: A03R (Evasion), Ubertip (Tooltip - Normal - Extended)
+{
+creep_mana shield
+}
+
+STRING 5963
+// Abilities: A03R (Evasion), Ubertip (Tooltip - Normal - Extended)
+{
+creep_mana shield
+}
+
+STRING 5964
+// Abilities: A042 (creep_frost armor), Tip (Tooltip - Normal)
+{
+creep_mana shield
+}
+
+STRING 5965
+// Abilities: A042 (creep_frost armor), Ubertip (Tooltip - Normal - Extended)
+{
+creep_mana shield
+}
+
+STRING 5966
+// Abilities: A042 (creep_frost armor), Ubertip (Tooltip - Normal - Extended)
+{
+creep_mana shield
+}
+
+STRING 5967
+// Abilities: A042 (creep_frost armor), Ubertip (Tooltip - Normal - Extended)
+{
+creep_mana shield
+}
+
+STRING 5968
+// Abilities: A042 (creep_frost armor), Ubertip (Tooltip - Normal - Extended)
+{
+creep_mana shield
+}
+
+STRING 5969
+// Abilities: A042 (creep_frost armor), Ubertip (Tooltip - Normal - Extended)
+{
+creep_mana shield
+}
+
+STRING 5970
+// Abilities: A03F (creep_frost armor), Tip (Tooltip - Normal)
+{
+creep_mana shield
+}
+
+STRING 5971
+// Abilities: A03F (creep_frost armor), Ubertip (Tooltip - Normal - Extended)
+{
+creep_mana shield
+}
+
+STRING 5972
+// Abilities: A03F (creep_frost armor), Tip (Tooltip - Normal)
+{
+creep_mana shield
+}
+
+STRING 5973
+// Abilities: A03F (creep_frost armor), Ubertip (Tooltip - Normal - Extended)
+{
+creep_mana shield
+}
+
+STRING 5974
+// Abilities: A03F (creep_frost armor), EditorSuffix (Editor Suffix)
+{
+creep_mana shield
+}
+
+STRING 5975
+// Buffs/Effects: B00X (creep_mana shield), EditorName (Name (Editor Only))
+{
+creep_mana shield
+}
+
+STRING 5976
+// Buffs/Effects: B018 (creep_mana shield), EditorName (Name (Editor Only))
+{
+creep_mana shield
+}
+
+STRING 5977
+// Buffs/Effects: B019 (creep_mana shield), EditorName (Name (Editor Only))
+{
+creep_mana shield
+}
+
+STRING 5978
+// Abilities: A00R (Barrage), EditorSuffix (Editor Suffix)
+{
+creep_frost armor
+}
+
+STRING 5979
+// Abilities: A02M (creep_frost armor), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 5980
+// Abilities: A007 (creep_frost armor), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 5981
+// Buffs/Effects: B01U (), Bufftip (Tooltip)
+{
+creep_mana shield
+}
+
+STRING 5982
+// Buffs/Effects: B01U (), Buffubertip (Tooltip - Extended)
+{
+creep_mana shield
+}
+
+STRING 5983
+// Abilities: A007 (creep_frost armor), EditorSuffix (Editor Suffix)
+{
+creep_frost armor
+}
+
+STRING 5984
+// Abilities: A00G (creep_frost armor), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 5985
+// Abilities: A00G (creep_frost armor), EditorSuffix (Editor Suffix)
+{
+creep_frost armor
+}
+
+STRING 5986
+// Abilities: A032 (Locust Swarm), EditorSuffix (Editor Suffix)
+{
+creep_frost armor
+}
+
+STRING 5987
+// Buffs/Effects: B01V (), Bufftip (Tooltip)
+{
+creep_mana shield
+}
+
+STRING 5988
+// Buffs/Effects: B01V (), Buffubertip (Tooltip - Extended)
+{
+creep_mana shield
+}
+
+STRING 5990
+// Abilities: A033 (Locust Swarm), EditorSuffix (Editor Suffix)
+{
+creep_frost armor
+}
+
+STRING 5993
+// Abilities: A034 (Evasion), EditorSuffix (Editor Suffix)
+{
+creep_frost armor
+}
+
+STRING 5994
+// Abilities: A03A (creep_frost armor), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 5999
+// Abilities: A041 (Phoenix Fire), EditorSuffix (Editor Suffix)
+{
+creep_frost armor
+}
+
+STRING 6003
+// Abilities: A043 (Evasion), EditorSuffix (Editor Suffix)
+{
+creep_frost armor
+}
+
+STRING 6004
+// Abilities: A042 (creep_frost armor), EditorSuffix (Editor Suffix)
+{
+creep_frost armor
+}
+
+STRING 6005
+// Abilities: A042 (creep_frost armor), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6012
+// Abilities: A03F (creep_frost armor), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6017
+// Upgrades: R00I (Skeletal Mastery), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6026
+// Upgrades: R00K (Upgrade Moon Glaive), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6027
+// Upgrades: R001 (Skeletal Mastery), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6028
+// Upgrades: R002 (Skeletal Mastery), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6029
+// Upgrades: R003 (Skeletal Mastery), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6030
+// Upgrades: R005 (Skeletal Mastery), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6031
+// Upgrades: R007 (Skeletal Mastery), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6032
+// Upgrades: R008 (Skeletal Mastery), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6033
+// Upgrades: R009 (Skeletal Mastery), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6034
+// Upgrades: R00A (Skeletal Mastery), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6035
+// Upgrades: R00E (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6036
+// Upgrades: R00F (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6037
+// Upgrades: R00M (Chaos), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6038
+// Upgrades: R00N (Steel Melee Weapons,Thorium Melee Weapons,Arcanite Melee Weapons), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6039
+// Upgrades: R00O (Skeletal Mastery), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6040
+// Upgrades: R00P (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6041
+// Upgrades: R000 (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6042
+// Upgrades: R004 (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6043
+// Upgrades: R006 (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6044
+// Upgrades: R00B (Unholy Strength,Improved Unholy Strength,Advanced Unholy Strength), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6045
+// Upgrades: R00C (Skeletal Mastery), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6046
+// Upgrades: R00D (Skeletal Mastery), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6047
+// Upgrades: R00G (Skeletal Mastery), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6048
+// Upgrades: R00H (Skeletal Mastery), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6049
+// Upgrades: R00J (Skeletal Mastery), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6050
+// Upgrades: R00L (Skeletal Mastery), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6051
+// Upgrades: R00Q (Skeletal Mastery), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6052
+// Upgrades: R00R (Skeletal Mastery), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6053
+// Upgrades: R00S (Skeletal Mastery), Name (Name)
+{
+creep_frost armor
+}
+
+STRING 6059
+// Units: h024 (Phoenix), Name (Name)
+{
+Phoenix
+}
+
+STRING 6060
+// Units: h00Q (Gryphon), Name (Name)
+{
+Gryphon
+}
+
+STRING 6064
+// Units: h00X (Faerie Dragon), Name (Name)
+{
+Faerie Dragon
+}
+
+STRING 6076
+// Units: h01S (Faceless Giant), Name (Name)
+{
+Faceless Giant
+}
+
+STRING 6083
+// Units: h03F (Hydralisk), Name (Name)
+{
+Hydralisk
+}
+
+STRING 6094
+// Units: h04O (Frostwolf), Name (Name)
+{
+Frostwolf
+}
+
+STRING 6103
+// Units: u004 (Creature summoner), Name (Name)
+{
+Creature summoner
+}
+
+STRING 6104
+// Units: u006 (Elemental summoner), Name (Name)
+{
+Elemental summoner
+}
+
+STRING 6105
+// Units: h00C (05 Grunt), Name (Name)
+{
+05 Grunt
+}
+
+STRING 6106
+// Units: h00O (01 Skeleton Archer), Name (Name)
+{
+01 Skeleton Archer
+}
+
+STRING 6107
+// Units: h00R (01 Skeleton Mage), Name (Name)
+{
+01 Skeleton Mage
+}
+
+STRING 6108
+// Units: h00S (01 Bone Wraith), Name (Name)
+{
+01 Bone Wraith
+}
+
+STRING 6109
+// Units: h006 (0 Blocker), Name (Name)
+{
+0 Blocker
+}
+
+STRING 6110
+// Units: h01I (05 Blademaster), Name (Name)
+{
+05 Blademaster
+}
+
+STRING 6111
+// Units: h01O (02 Spirit of Vengeance), Name (Name)
+{
+02 Spirit of Vengeance
+}
+
+STRING 6112
+// Units: h01P (02 Shade of Hatred), Name (Name)
+{
+02 Shade of Hatred
+}
+
+STRING 6113
+// Units: h01V (10 Wyvern), Name (Name)
+{
+10 Wyvern
+}
+
+STRING 6114
+// Units: h020 (Spirit Wolf), Name (Name)
+{
+Spirit Wolf
+}
+
+STRING 6115
+// Units: h021 (04 Garithos), Name (Name)
+{
+04 Garithos
+}
+
+STRING 6116
+// Units: h026 (03 Succubus), Name (Name)
+{
+03 Succubus
+}
+
+STRING 6117
+// Units: h02F (03 Felguard), Name (Name)
+{
+03 Felguard
+}
+
+STRING 6118
+// Units: h02H (02 Void Walker), Name (Name)
+{
+02 Void Walker
+}
+
+STRING 6119
+// Units: h02I (03 Felhound), Name (Name)
+{
+03 Felhound
+}
+
+STRING 6120
+// Units: h00T (04 Captain), Name (Name)
+{
+04 Captain
+}
+
+STRING 6121
+// Units: h00U (04 Soldier), Name (Name)
+{
+04 Soldier
+}
+
+STRING 6122
+// Units: h00V (07 Spellbreaker), Name (Name)
+{
+07 Spellbreaker
+}
+
+STRING 6123
+// Units: h00W (03 Doomguard), Name (Name)
+{
+03 Doomguard
+}
+
+STRING 6124
+// Units: h00Y (04 Magician), Name (Name)
+{
+04 Magician
+}
+
+STRING 6125
+// Units: h00Z (07 Priest), Name (Name)
+{
+07 Priest
+}
+
+STRING 6126
+// Units: h010 (04 Mage), Name (Name)
+{
+04 Mage
+}
+
+STRING 6127
+// Units: h011 (07 Blood Mage), Name (Name)
+{
+07 Blood Mage
+}
+
+STRING 6128
+// Units: h01J (11 Bronze Dragon), Name (Name)
+{
+11 Bronze Dragon
+}
+
+STRING 6129
+// Units: h01K (05 Orc Raider), Name (Name)
+{
+05 Orc Raider
+}
+
+STRING 6130
+// Units: h01L (05 Shaman), Name (Name)
+{
+05 Shaman
+}
+
+STRING 6131
+// Units: h01M (05 Windrider), Name (Name)
+{
+05 Windrider
+}
+
+STRING 6132
+// Units: h01N (15 Lich), Name (Name)
+{
+15 Lich
+}
+
+STRING 6133
+// Units: h01Q (11 Blue Dragon), Name (Name)
+{
+11 Blue Dragon
+}
+
+STRING 6134
+// Units: h01R (11 Blue Dragon Whelp), Name (Name)
+{
+11 Blue Dragon Whelp
+}
+
+STRING 6135
+// Units: h01T (11 Bronze Dragon Whelp), Name (Name)
+{
+11 Bronze Dragon Whelp
+}
+
+STRING 6136
+// Units: h01U (15 FrostWyrm), Name (Name)
+{
+15 FrostWyrm
+}
+
+STRING 6137
+// Units: h03B (11 Bronze Dragon), Name (Name)
+{
+11 Bronze Dragon
+}
+
+STRING 6138
+// Units: h03C (14 Blue Dragonspawn 2), Name (Name)
+{
+14 Blue Dragonspawn 2
+}
+
+STRING 6139
+// Units: h03D (14 Blue Dragonspawn), Name (Name)
+{
+14 Blue Dragonspawn
+}
+
+STRING 6140
+// Units: h03E (14 Blue Dragonkin), Name (Name)
+{
+14 Blue Dragonkin
+}
+
+STRING 6141
+// Units: h03G (09 Black Dragon), Name (Name)
+{
+09 Black Dragon
+}
+
+STRING 6142
+// Units: h03H (13 Tree), Name (Name)
+{
+13 Tree
+}
+
+STRING 6143
+// Units: h03I (11 Green Dragon), Name (Name)
+{
+11 Green Dragon
+}
+
+STRING 6144
+// Units: h03J (11 Green Dragon Whelp), Name (Name)
+{
+11 Green Dragon Whelp
+}
+
+STRING 6145
+// Units: h07B (14 Dragonkin), Name (Name)
+{
+14 Dragonkin
+}
+
+STRING 6146
+// Units: h04C (06 Crab), Name (Name)
+{
+06 Crab
+}
+
+STRING 6147
+// Units: h04J (06 Scorpion), Name (Name)
+{
+06 Scorpion
+}
+
+STRING 6148
+// Units: h04K (03 Felreaver), Name (Name)
+{
+03 Felreaver
+}
+
+STRING 6149
+// Units: h04L (06 Hawk), Name (Name)
+{
+06 Hawk
+}
+
+STRING 6150
+// Units: h04M (03 Succubus), Name (Name)
+{
+03 Succubus
+}
+
+STRING 6151
+// Units: h04N (01 Bone Giant), Name (Name)
+{
+01 Bone Giant
+}
+
+STRING 6152
+// Units: h04P (8 Ogre), Name (Name)
+{
+8 Ogre
+}
+
+STRING 6153
+// Units: h04Q (8 Ogre Warrior), Name (Name)
+{
+8 Ogre Warrior
+}
+
+STRING 6154
+// Units: h04R (02 Shade), Name (Name)
+{
+02 Shade
+}
+
+STRING 6155
+// Units: h04S (12 Green Spider), Name (Name)
+{
+12 Green Spider
+}
+
+STRING 6156
+// Units: h04T (12 Spider), Name (Name)
+{
+12 Spider
+}
+
+STRING 6157
+// Units: h04U (13 Treant), Name (Name)
+{
+13 Treant
+}
+
+STRING 6158
+// Units: h04V (8 Oger Mage), Name (Name)
+{
+8 Oger Mage
+}
+
+STRING 6159
+// Units: h04W (01 Skeleton), Name (Name)
+{
+01 Skeleton
+}
+
+STRING 6160
+// Units: h03K (15 Ghoul), Name (Name)
+{
+15 Ghoul
+}
+
+STRING 6161
+// Units: h06G (15 Necromancer), Name (Name)
+{
+15 Necromancer
+}
+
+STRING 6162
+// Units: h07A (15 Acolyte), Name (Name)
+{
+15 Acolyte
+}
+
+STRING 6163
+// Units: h07C (15 Gargoyle), Name (Name)
+{
+15 Gargoyle
+}
+
+STRING 6164
+// Units: h07D (15 Crypt Fiend), Name (Name)
+{
+15 Crypt Fiend
+}
+
+STRING 6165
+// Units: h07E (15 Abomination), Name (Name)
+{
+15 Abomination
+}
+
+STRING 6166
+// Abilities: A000 (gfx_aura_trueshot), Name (Name)
+{
+gfx_aura_trueshot
+}
+
+STRING 6167
+// Abilities: A004 (gfx_aura_unholy), Name (Name)
+{
+gfx_aura_unholy
+}
+
+STRING 6168
+// Abilities: A00B (gfx_aura_blight), Name (Name)
+{
+gfx_aura_blight
+}
+
+STRING 6169
+// Abilities: A00D (gfx_aura_vampire), Name (Name)
+{
+gfx_aura_vampire
+}
+
+STRING 6170
+// Abilities: A00E (gfx_aura_devotion), Name (Name)
+{
+gfx_aura_devotion
+}
+
+STRING 6171
+// Abilities: A00F (gfx_aura_brilliance), Name (Name)
+{
+gfx_aura_brilliance
+}
+
+STRING 6172
+// Abilities: A00J (gfx_aura_command), Name (Name)
+{
+gfx_aura_command
+}
+
+STRING 6173
+// Abilities: A00K (gfx_aura_endurance), Name (Name)
+{
+gfx_aura_endurance
+}
+
+STRING 6174
+// Abilities: A00L (gfx_aura_thorns), Name (Name)
+{
+gfx_aura_thorns
 }
 
