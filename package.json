@@ -10,19 +10,23 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "ceres-decl": "^1.0.0",
-    "ceres-tstl": "^0.31.0",
-    "lua-types": "^2.7.0",
     "@typescript-eslint/eslint-plugin": "^2.19.0",
     "@typescript-eslint/parser": "^2.19.0",
     "async": "^3.1.1",
+    "ceres-decl": "^1.0.0",
+    "ceres-tstl": "^0.31.0",
     "copyfiles": "^2.2.0",
+    "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-prettier": "^3.1.2",
+    "lua-types": "^2.7.0",
     "prettier": "^1.19.1",
     "tsc-watch": "^4.1.0",
     "typescript": "^3.7.5",
-    "typescript-to-lua": "^0.31.0"
+    "typescript-to-lua": "^0.35.0"
+  },
+  "dependencies": {
+    "w3ts": "^2.1.2"
   }
 }

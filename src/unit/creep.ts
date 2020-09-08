@@ -40,8 +40,8 @@ export class Creep {
   abilities: string[] = [AbilityIds.Ghost, AbilityIds.GhostVisible]
   private unit: WarObject
 
-  constructor(baseUnitId = 'hfoo') {
-    this.unit = currentMap?.objects.unit.getObject(baseUnitId).clone() as WarObject
+  constructor() {
+    this.unit = currentMap?.objects.unit.getObject('hfoo').clone() as WarObject
   }
 
   private savePropsToUnit(): void {

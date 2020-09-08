@@ -5,8 +5,10 @@
 !.eslintignore
 !.prettierrc
 !build.lua
+!runconfig.default.lua
 !package.json
 !tsconfig.json
 !src
 !maps
+!tools
 !README.md

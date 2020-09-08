@@ -19,6 +19,7 @@
     "luaTarget": "5.3",
     "noHeader": true,
     "luaLibImport": "require",
-    "noImplicitSelf": true
+    "noImplicitSelf": true,
+    "sourceMapTraceback": true
   }
 }
