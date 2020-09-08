@@ -1,55 +1,23 @@
-/* eslint-disable @typescript-eslint/triple-slash-reference */
-// This is necessary to bring in Lua and Ceres declarations into the scope
-// Another alternative is to put these into the `types` array in `tsconfig.json`
-/// // <reference types="lua-types/5.3"/>
-/// // <reference types="ceres-decl/ceres"/>
-/// // <reference types="./lib/core/blizzard"/>
+import { Timer, Unit } from "w3ts";
+import { Players } from "w3ts/globals";
+import { addScriptHook, W3TS_HOOK } from "w3ts/hooks";
 
-import { Log, LogLevel } from './lib/Serilog/Serilog'
-import { StringSink } from './lib/Serilog/Sinks/StringSink'
+const BUILD_DATE = compiletime(() => new Date().toUTCString());
+const TS_VERSION = compiletime(() => require("typescript").version);
+const TSTL_VERSION = compiletime(() => require("typescript-to-lua").version);
 
-compiletime(() => require('./setup').init())
+function tsMain() {
+  print(`Build: ${BUILD_DATE}`);
+  print(`Typescript: v${TS_VERSION}`);
+  print(`Transpiler: v${TSTL_VERSION}`);
+  print(" ");
 
-Log.Init([new StringSink(LogLevel.Debug, BJDebugMsg)])
+  /*const unit = new Unit(Players[0], FourCC("hfoo"), 0, 0, 270);
+  unit.name = "TypeScript";
 
-Log.Information('Hello World')
-Log.Verbose('ASDF123!!!')
-//Log.Information(`${FourCC(creeps[0].id as string)}`)
+  new Timer().start(1.0, true, () => {
+    unit.color = Players[math.random(0, bj_MAX_PLAYERS)].color;
+  });*/
+}
 
-//const player = Player(0)
-//const unit = CreateUnit(player, FourCC('xxx1'), 500, 500, 0)
-
-/*
-ceres.addHook('reload::after', () => {
-  Log.Init([new StringSink(LogLevel.Debug, BJDebugMsg)])
-
-  function Main(this: void): void {
-    Log.Information('Hello World')
-    Log.Information(`${FourCC('I01T')}`)
-    //Log.Information(`${DecodeFourCC(FourCC('I01T'))}`)
-
-    const player = Player(1)
-    const unit = CreateUnit(player, FourCC('xxx1'), 500, 500, 0)
-  }
-
-  function PrintError(err: any): void {
-    Log.Fatal(err)
-  }
-
-  xpcall(
-    () => {
-      const init: trigger = CreateTrigger()
-      TriggerRegisterTimerEvent(init, 0, false)
-      TriggerAddAction(init, () =>
-        xpcall(
-          () => Main(),
-          err => PrintError(err)
-        )
-      )
-    },
-    err => {
-      PrintError(err)
-    }
-  )
-})
-*/
+addScriptHook(W3TS_HOOK.MAIN_AFTER, tsMain);

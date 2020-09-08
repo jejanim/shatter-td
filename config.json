@@ -1,0 +1,7 @@
+{
+  "mapFolder": "map.w3x",
+  "minifyScript": false,
+  "gameExecutable": "E:\\games\\battle.net\\Warcraft III\\x86_64\\Warcraft III.exe",
+  "outputFolder": "./dist/bin",
+  "launchArgs": ["-launch", "-windowmode", "windowed"]
+}
