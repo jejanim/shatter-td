@@ -1,0 +1,12 @@
+/*
+!.vscode
+!.gitignore
+!.eslintrc.js
+!.eslintignore
+!.prettierrc
+!build.lua
+!package.json
+!tsconfig.json
+!src
+!maps
+!README.md
