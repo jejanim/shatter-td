@@ -10,10 +10,9 @@ const BUILD_DATE = compiletime(() => new Date().toUTCString());
 const TS_VERSION = compiletime(() => require("typescript").version);
 const TSTL_VERSION = compiletime(() => require("typescript-to-lua").version);
 
-//Log.Init([new StringSink(LogLevel.Debug, )]);
+Log.Init([new StringSink(LogLevel.Debug, BJDebugMsg)]);
 
 // setup vars
-
 const aiPlayers = {
   neutral: Players[10],
   creepsMiddle: Players[8],
@@ -23,15 +22,13 @@ const activePlayers = getActivePlayers();
 const points = {
   queen: [GetRectCenterX(gg_rct_queen), GetRectCenterY(gg_rct_queen)],
 };
+const patrons = [];
 
 // main stuff
 function tsMain() {
-  print(`Build: ${BUILD_DATE}`);
-  print(`Typescript: v${TS_VERSION}`);
-  print(`Transpiler: v${TSTL_VERSION}`);
-  print(" ");
-
-  const patrons = [];
+  Log.Debug(`Build: ${BUILD_DATE}`);
+  Log.Debug(`Typescript: v${TS_VERSION}`);
+  Log.Debug(`Transpiler: v${TSTL_VERSION}`);
 
   // spawn sanctum
   const sanctum = new Unit(
@@ -44,7 +41,7 @@ function tsMain() {
   sanctum.name = "Sanctum";
   sanctum.setAnimation("birth");
 
-  print("spawned sanctum");
+  Log.Debug("spawned sanctum");
 
   Object.keys(PremadeUnits.summoners).forEach(key => {
     let unitId = PremadeUnits.summoners[key];
@@ -60,11 +57,14 @@ function tsMain() {
       points.queen[1],
       0
     );
-    SelectUnitForPlayerSingle(sanctum.handle, player.handle);
     patrons.push(patron);
+    SelectUnitForPlayerSingle(sanctum.handle, player.handle);
     ResetToGameCameraForPlayer(player.handle, 1);
-    print(
-      "spawned patron for player " + GetPlayerColor(player.handle) + player.name
+    Log.Debug("Player color: ", GetPlayerColor(player.handle).__handle);
+    Log.Debug(
+      "spawned patron for player " +
+        GetPlayerColor(player.handle).__playercolor +
+        player.name
     );
   });
 
