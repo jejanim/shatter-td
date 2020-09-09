@@ -1,11 +1,13 @@
 import { config } from "config/config";
+import { Players } from "w3ts/globals/index";
+import { MapPlayer } from "w3ts/index";
 
-export const getActivePlayers = () => {
-  const activePlayers = [];
+export const getActivePlayers = (): MapPlayer[] => {
+  const activePlayers: MapPlayer[] = [];
 
   for (let index = 0; index < config.players.maxPlayers; index++) {
-    let player = Player(index);
-    if (IsPlayerSlotState(player, PLAYER_SLOT_STATE_PLAYING)) {
+    let player = Players[index];
+    if (IsPlayerSlotState(player.handle, PLAYER_SLOT_STATE_PLAYING)) {
       activePlayers.push(player);
     }
   }

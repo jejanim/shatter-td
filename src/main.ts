@@ -40,7 +40,7 @@ function tsMain() {
   sanctum.name = "Sanctum";
   sanctum.setAnimation("birth");
 
-  print("spawned queen");
+  print("spawned sanctum");
 
   Object.keys(PremadeUnits.summoners).forEach(key => {
     let unitId = PremadeUnits.summoners[key];
@@ -56,22 +56,24 @@ function tsMain() {
       points.queen[1],
       0
     );
-    SelectUnitForPlayerSingle(sanctum.handle, player);
+    SelectUnitForPlayerSingle(sanctum.handle, player.handle);
     patrons.push(patron);
-    ResetToGameCameraForPlayer(player, 1);
+    ResetToGameCameraForPlayer(player.handle, 1);
+    print(
+      "spawned patron for player " + GetPlayerColor(player.handle) + player.name
+    );
   });
 
-  //TriggerExecute(gg_trg_load_custom_heroes);
   Sleep(1);
+
   SetUserControlForceOn(GetPlayersAll());
   TriggerExecute(gg_trg_finish_loading);
 
-  /*const unit = new Unit(Players[0], FourCC("hfoo"), 0, 0, 270);
-  unit.name = "TypeScript";
-
+  /*
   new Timer().start(1.0, true, () => {
     unit.color = Players[math.random(0, bj_MAX_PLAYERS)].color;
-  });*/
+  });
+  */
 }
 
 addScriptHook(W3TS_HOOK.MAIN_AFTER, tsMain);
