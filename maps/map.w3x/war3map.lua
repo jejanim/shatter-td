@@ -1436,7 +1436,6 @@ function InitTrig_var_builders()
 end
 
 function Trig_var_abilities_Actions()
-    ConditionalTriggerExecute(gg_trg_spawn_queen)
     DisableTrigger(GetTriggeringTrigger())
 end
 
@@ -1456,27 +1455,6 @@ end
 function InitTrig_var_items()
     gg_trg_var_items = CreateTrigger()
     TriggerAddAction(gg_trg_var_items, Trig_var_items_Actions)
-end
-
-function Trig_spawn_queen_Actions()
-    udg_temp_point = GetRectCenter(gg_rct_queen)
-    CreateNUnitsAtLoc(1, FourCC("u00E"), Player(10), udg_temp_point, 270.00)
-    udg_unit_queen = GetLastCreatedUnit()
-    SetUnitAnimation(udg_unit_queen, "birth")
-    bj_forLoopAIndex = 1
-    bj_forLoopAIndexEnd = 6
-    while (true) do
-        if (bj_forLoopAIndex > bj_forLoopAIndexEnd) then break end
-        AddUnitToStockBJ(udg_unittype_worker[GetForLoopIndexA()], udg_unit_queen, 1, 1)
-        bj_forLoopAIndex = bj_forLoopAIndex + 1
-    end
-    ConditionalTriggerExecute(gg_trg_load_custom_heroes)
-    DisableTrigger(GetTriggeringTrigger())
-end
-
-function InitTrig_spawn_queen()
-    gg_trg_spawn_queen = CreateTrigger()
-    TriggerAddAction(gg_trg_spawn_queen, Trig_spawn_queen_Actions)
 end
 
 function Trig_spawn_trees_Actions()
@@ -3384,7 +3362,6 @@ function InitCustomTriggers()
     InitTrig_var_builders()
     InitTrig_var_abilities()
     InitTrig_var_items()
-    InitTrig_spawn_queen()
     InitTrig_spawn_trees()
     InitTrig_load_custom_heroes()
     InitTrig_load_life_indicator()
