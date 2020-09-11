@@ -1531,52 +1531,6 @@ function InitTrig_finish_loading()
     TriggerAddAction(gg_trg_finish_loading, Trig_finish_loading_Actions)
 end
 
-function Trig_buy_summoner_Func002C()
-    if (GetUnitTypeId(GetSoldUnit()) == FourCC("u002")) then
-        return true
-    end
-    if (GetUnitTypeId(GetSoldUnit()) == FourCC("u003")) then
-        return true
-    end
-    if (GetUnitTypeId(GetSoldUnit()) == FourCC("u004")) then
-        return true
-    end
-    if (GetUnitTypeId(GetSoldUnit()) == FourCC("u006")) then
-        return true
-    end
-    if (GetUnitTypeId(GetSoldUnit()) == FourCC("u001")) then
-        return true
-    end
-    if (GetUnitTypeId(GetSoldUnit()) == FourCC("u000")) then
-        return true
-    end
-    return false
-end
-
-function Trig_buy_summoner_Conditions()
-    if (not Trig_buy_summoner_Func002C()) then
-        return false
-    end
-    return true
-end
-
-function Trig_buy_summoner_Actions()
-    udg_int_spawn[GetConvertedPlayerId(GetOwningPlayer(GetSoldUnit()))] = 1
-    udg_unit_worker[GetConvertedPlayerId(GetOwningPlayer(GetSoldUnit()))] = GetTrainedUnit()
-    SetUnitPositionLoc(GetSoldUnit(), GetPlayerStartLocationLoc(GetOwningPlayer(GetSoldUnit())))
-    UnitAddItemByIdSwapped(FourCC("I000"), GetSoldUnit())
-    PanCameraToTimedLocForPlayer(GetOwningPlayer(GetSoldUnit()), GetPlayerStartLocationLoc(GetOwningPlayer(GetSoldUnit())), 0)
-    SelectUnitForPlayerSingle(GetSoldUnit(), GetOwningPlayer(GetSoldUnit()))
-    PlaySoundBJ(gg_snd_GoodJob)
-end
-
-function InitTrig_buy_summoner()
-    gg_trg_buy_summoner = CreateTrigger()
-    TriggerRegisterAnyUnitEventBJ(gg_trg_buy_summoner, EVENT_PLAYER_UNIT_SELL)
-    TriggerAddCondition(gg_trg_buy_summoner, Condition(Trig_buy_summoner_Conditions))
-    TriggerAddAction(gg_trg_buy_summoner, Trig_buy_summoner_Actions)
-end
-
 function Trig_selection_expired_Actions()
     DestroyTimerDialogBJ(GetLastCreatedTimerDialogBJ())
     DisplayTextToForce(GetPlayersAll(), "TRIGSTR_5588")
@@ -1590,7 +1544,6 @@ function Trig_selection_expired_Actions()
     ConditionalTriggerExecute(gg_trg_add_sanctum_abilities)
     ConditionalTriggerExecute(gg_trg_remove_inactive_players)
     ShowTextTagForceBJ(true, udg_ftext_lifes, GetPlayersAll())
-    DisableTrigger(gg_trg_buy_summoner)
     ConditionalTriggerExecute(gg_trg_finish_initialization)
     DisableTrigger(GetTriggeringTrigger())
 end
@@ -3366,7 +3319,6 @@ function InitCustomTriggers()
     InitTrig_load_custom_heroes()
     InitTrig_load_life_indicator()
     InitTrig_finish_loading()
-    InitTrig_buy_summoner()
     InitTrig_selection_expired()
     InitTrig_add_sanctum_abilities()
     InitTrig_finish_initialization()
