@@ -1,10 +1,14 @@
-import { Timer, Unit, CameraSetup } from "w3ts";
+import { Timer, Unit, CameraSetup, Trigger, MapPlayer, Sound } from "w3ts";
 import { Players } from "w3ts/globals";
 import { addScriptHook, W3TS_HOOK } from "w3ts/hooks";
 import { PremadeUnits } from "units/units";
 import { getActivePlayers } from "players";
 import { Log, LogLevel } from "utils/Serilog/Serilog";
 import { StringSink } from "utils/Serilog/Sinks/StringSink";
+import { colorizeStringWithPlayer } from "utils/Colors";
+import { Regions } from "locations";
+import { Sounds } from "sounds";
+import { Items } from "items";
 
 const BUILD_DATE = compiletime(() => new Date().toUTCString());
 const TS_VERSION = compiletime(() => require("typescript").version);
@@ -60,11 +64,12 @@ function tsMain() {
     patrons.push(patron);
     SelectUnitForPlayerSingle(sanctum.handle, player.handle);
     ResetToGameCameraForPlayer(player.handle, 1);
-    Log.Debug("Player color: ", GetPlayerColor(player.handle).__handle);
     Log.Debug(
-      "spawned patron for player " +
-        GetPlayerColor(player.handle).__playercolor +
-        player.name
+      `spawned patron for player ${colorizeStringWithPlayer(
+        player.name,
+        player.id
+      )}
+    `
     );
   });
 
@@ -78,6 +83,42 @@ function tsMain() {
     unit.color = Players[math.random(0, bj_MAX_PLAYERS)].color;
   });
   */
+
+  const createSummonerForPlayer = (
+    playerHandle: player,
+    selectedUnit: unit
+  ): Unit => {
+    const playerId = GetPlayerId(playerHandle);
+    const location = Regions.player[playerId].workerSpawn;
+    const summoner = new Unit(
+      playerId,
+      GetUnitTypeId(selectedUnit),
+      location.centerX,
+      location.centerY,
+      0
+    );
+    summoner.addItemById(FourCC(Items.campfire));
+    return summoner;
+  };
+
+  const sanctumTrg = new Trigger();
+  sanctumTrg.registerUnitEvent(sanctum, EVENT_UNIT_SELL);
+  sanctumTrg.addCondition(Condition(() => GetSoldUnit() === sanctum.handle));
+  sanctumTrg.addAction(() => {
+    const player = MapPlayer.fromHandle(GetOwningPlayer(GetBuyingUnit()));
+    const summoner = createSummonerForPlayer(player.handle, GetSoldUnit());
+    const location = Location(
+      GetUnitX(summoner.handle),
+      GetUnitY(summoner.handle)
+    );
+    PanCameraToLocForPlayer(player.handle, location);
+    SelectUnitForPlayerSingle(summoner.handle, player.handle);
+    PlaySoundOnUnitBJ(
+      Sounds.action.player.buySummoner.handle,
+      1,
+      summoner.handle
+    );
+  });
 }
 
 addScriptHook(W3TS_HOOK.MAIN_AFTER, tsMain);
