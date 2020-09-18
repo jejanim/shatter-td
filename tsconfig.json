@@ -4,9 +4,8 @@
     "baseUrl": "./src",
     "allowJs": true,
     "target": "es6",
-    "lib": [
-      "es6"
-    ],
+    "lib": ["es6"],
+    "sourceMap": true,
     "moduleResolution": "classic",
     "paths": {
       "*": [
@@ -41,9 +40,7 @@
       "mdx-m3-viewer/src/types"
     ]
   },
-  "include": [
-    "src"
-  ],
+  "include": ["src"],
   "exclude": [],
   "tstl": {
     "luaTarget": "5.3",
@@ -51,6 +48,7 @@
     "luaLibImport": "require",
     "noImplicitSelf": true,
     "luaBundle": "dist/tstl_output.lua",
-    "luaBundleEntry": "./src/main.ts"
+    "luaBundleEntry": "./src/main.ts",
+    "sourceMapTraceback": true
   }
 }
