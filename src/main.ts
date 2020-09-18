@@ -45,21 +45,18 @@ function tsMain() {
 
   Log.Debug('spawned sanctum')
 
-  Object.keys(PremadeUnits.summoners).forEach(key => {
+  Object.keys(PremadeUnits.summoners).forEach((key) => {
     const unitId = PremadeUnits.summoners[key]
     sanctum.addUnitToStock(FourCC(unitId), 1, 1)
   })
 
   // spawn invisible patrons for active players
-  activePlayers.forEach(player => {
+  activePlayers.forEach((player) => {
     const patron = new Unit(player, FourCC(PremadeUnits.hidden.patron), points.queen[0], points.queen[1], 0)
     patrons.push(patron)
     SelectUnitForPlayerSingle(sanctum.handle, player.handle)
     ResetToGameCameraForPlayer(player.handle, 1)
-    Log.Debug(
-      `spawned patron for player ${colorizeStringWithPlayer(player.name, player.id)}
-    `
-    )
+    Log.Debug(`spawned patron for player ${colorizeStringWithPlayer(player.name, player.id)}`)
   })
 
   Sleep(3)
