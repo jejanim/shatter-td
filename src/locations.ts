@@ -1,14 +1,6 @@
-import { Rectangle } from "w3ts/index";
+import { Rectangle } from 'w3ts/index'
 
-interface PlayerLocation {
-  workerSpawn: Rectangle;
-}
-
-export const Regions = {
-  player: [] as PlayerLocation[],
-};
-
-[
+const prefs = [
   gg_rct_tower_area_p1,
   gg_rct_tower_area_p2,
   gg_rct_tower_area_p3,
@@ -17,7 +9,10 @@ export const Regions = {
   gg_rct_tower_area_p6,
   gg_rct_tower_area_p7,
   gg_rct_tower_area_p8,
-].forEach(
-  (rect, idx) =>
-    (Regions.player[idx] = { workerSpawn: Rectangle.fromHandle(rect) })
-);
+]
+
+export const Regions = {
+  player: {
+    workerSpawn: prefs.map(rect => Rectangle.fromHandle(rect)),
+  },
+}
